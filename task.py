@@ -1,7 +1,6 @@
 from prefect import task
 from util.http import http
 from requests.exceptions import Timeout
-import time
 
 @task
 def get_location(id_location: int):     

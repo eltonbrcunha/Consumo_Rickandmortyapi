@@ -2,7 +2,7 @@ from requests import PreparedRequest, Response
 from requests.adapters import HTTPAdapter
 
 
-DEFAULT_TIMEOUT = 4
+DEFAULT_TIMEOUT = 5
 
 class TimeoutHTTPAdapter(HTTPAdapter):
     def __init__(self, *args, **kwargs) -> None:
