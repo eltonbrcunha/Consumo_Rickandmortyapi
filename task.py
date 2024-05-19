@@ -10,6 +10,8 @@ def get_location(id_location: int):
         if response.status_code == 200: 
             repo = response.json()
             return repo
+        else:
+             return response.status_code
 
  
 
@@ -21,6 +23,8 @@ def get_single_character(id_character: int):
     if response.status_code == 200:
         repo = response.json()
         return repo
+    else:
+             return response.status_code
 
 @task 
 def get_characters_info(name_character: str, species_character: str):
@@ -30,3 +34,5 @@ def get_characters_info(name_character: str, species_character: str):
     if response.status_code == 200:
         repo = response.json()
         return repo
+    else:
+             return response.status_code

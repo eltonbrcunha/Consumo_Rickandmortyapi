@@ -5,7 +5,7 @@ from util.http_hooks import raise_for_status_hook
 
 
 retry_policy = Retry(
-    total=4,
+    total=2,
     backoff_factor=1,
     status_forcelist=[429,500,502,503,504],
     allowed_methods= ["GET", "HEAD", "POST", "DELETE", "PUT", "PATCH", "OPTIONS"],
