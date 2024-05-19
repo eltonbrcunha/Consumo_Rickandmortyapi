@@ -21,13 +21,13 @@ def get_single():
     name      = repo_json['name']
     species   = repo_json['species']
     
-    print('------------------- Single --------------------')
+    print('------------------- Single Character --------------------')
     print(repo_json)
 
     return name,species
 
 
-@flow(name="Teste")
+@flow(name="FlowCharacterFull")
 def get_character():
     name,species = get_single()
     character_info = get_characters_info(name,species)
